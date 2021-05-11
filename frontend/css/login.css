@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+    margin:0;
+}
+
+main {
+    position: relative;
+    min-height: 100vh; 
+}
+
+main section h1, p {
+    text-align: center;
+    color: rgb(61, 61, 61);
+}
+
+main section p {
+    margin-top: 20px;
+}
+
+main section form input {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+main section form input[type=button] {
+    background-color: #df2f2f;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 3px solid rgb(73, 73, 73);
+    border-radius: 20px;
+}
+
+main section form input[type=text],input[type=password] {
+    font-weight: bold;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 3px solid rgb(73, 73, 73);
+    border-radius: 20px;
+}
+
+main section p a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(219, 0, 146);
+}
+
+#cadastro {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border: 3px solid rgb(73, 73, 73);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#alerta {
+    color: red;
+    font-weight: bold;
+    font-size: 50px;
+}
