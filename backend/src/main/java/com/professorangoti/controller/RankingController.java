@@ -28,8 +28,15 @@ public class RankingController {
 	}
 	
 	@GetMapping("/{nivel}")
-	@CrossOrigin
-	List<Ranking> rankingOrdenado(@PathVariable String nivel){
-		return repo.findByNivelOrderByPontuacaoDesc(nivel);
+	List<Ranking> primeirosCincoPorNivel(@PathVariable String nivel){
+		return repo.findTop5ByNivelOrderByPontuacaoAsc(nivel);
 	}
+	
+	@GetMapping
+	List<Ranking> primeirosCinco(){
+		return repo.findTop5ByOrderByPontuacaoDesc();
+	}
+	
+	
+		
 }

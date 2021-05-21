@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="false" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.professorangoti.domain.Ranking" project="jogo" 
+    file="/jogo/src/main/java/com/professorangoti/domain/Ranking.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="94" width="138" x="156" y="128"/>    
+    <display autosize="false" stereotype="false" package="false" initial-value="false" signature="false" 
+      sort-features="false" accessors="true" visibility="false">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.professorangoti.domain.Usuario" project="jogo" 
+    file="/jogo/src/main/java/com/professorangoti/domain/Usuario.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="99" x="403" y="125"/>    
+    <display autosize="false" stereotype="false" package="false" initial-value="false" signature="false" 
+      sort-features="false" accessors="true" visibility="false">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <association id="3">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="4" name="usuario"/>      
+      <multiplicity id="5" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="false" stereotype="false" package="false" initial-value="false" signature="false" 
+    sort-features="false" accessors="true" visibility="false">    
+    <attributes public="true" package="true" protected="true" private="true" static="false"/>    
+    <operations public="false" package="false" protected="false" private="false" static="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

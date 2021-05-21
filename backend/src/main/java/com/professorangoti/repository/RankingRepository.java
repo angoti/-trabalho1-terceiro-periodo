@@ -6,8 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.professorangoti.domain.Ranking;
 
-public interface RankingRepository extends JpaRepository<Ranking, Integer>{
-	
-	List<Ranking> findByNivelOrderByPontuacaoDesc(String nivel);
+public interface RankingRepository extends JpaRepository<Ranking, Integer> {
 
+	List<Ranking> findTop5ByOrderByPontuacaoDesc();
+	List<Ranking> findTop5ByNivelOrderByPontuacaoAsc(String nivel);
 }
